@@ -1,10 +1,11 @@
 
 header{
   background-color:#FF4500;
-  background-image: url('http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg');
+  background-image: url('headerpic.png');
   background-repeat:repeat-x;
   background-position:0px 0px;
-  padding-bottom: 70px;
+  padding-top: 25px;
+  padding-bottom: 150px;
   padding-left:-1000px;
   margin-bottom:0px;
 }
