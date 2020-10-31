@@ -1,0 +1,54 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chaitanya Kreeda</title>
+	<link rel="stylesheet" href="{%static 'hw1.css' %}" type="text/css" media="all">
+</head>
+<body>
+	<header>
+		<h1>Chaitanya Kreeda</h1>
+		<nav>
+			<a href={%url "cbitcric"%}>Cricket</a>
+			<a href={%url "cbitvol"%}>Volleyball</a>
+			<a href={%url "cbitbas"%}>Basketball</a>
+			<a href={%url "cbitkab"%}>Kabaddi</a>
+		</nav>
+	</header>
+	<main>
+
+			<h2>Basketball Matches</h2>
+
+
+         {% for s in list %}
+        <span> <button>  {{ s.team_a }} vs {{s.team_b}} </button></span> <span>{{s.dt}}</span>
+        <br><br>
+
+
+          {% endfor %}
+	</main>
+<script>
+	function blive(){
+		document.getElementById("bumatch").innerHTML="";
+		document.getElementById("brmatch").innerHTML="";
+		document.getElementById("blmatch").innerHTML="basketball live matches are";
+	    	document.getElementById("div2").style.display="block";
+	}
+
+	function brecent(){
+		document.getElementById("blmatch").innerHTML="";
+		document.getElementById("bumatch").innerHTML="";
+		document.getElementById("brmatch").innerHTML="basketball recent matches are";
+	    	document.getElementById("div3").style.display="block";
+	}
+	function bupcoming(){
+		document.getElementById("blmatch").innerHTML="";
+		document.getElementById("brmatch").innerHTML="";
+		document.getElementById("bumatch").innerHTML="basketball upcoming matches are";
+	    document.getElementById("div1").style.display="block";
+	}
+
+</script>
+</body>
+</html>
