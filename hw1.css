@@ -1,0 +1,105 @@
+
+header{
+  background-color:#FF4500;
+  background-image: url('headerpic.png');
+  background-repeat:repeat-x;
+  background-position:0px 0px;
+  padding-top: 25px;
+  padding-bottom: 150px;
+  padding-left:-1000px;
+  margin-bottom:0px;
+}
+header a:link,a:visited{
+	background-color:white;
+	color:black;
+	border:2px solid green;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 20px;
+	margin-left: 60px;
+	margin-right: 50px;
+	opacity: 0.4;
+
+}
+
+h1{
+  text-align:center;
+  text-transform:uppercase;  
+} 
+header a:hover{
+	background-color: green;
+	color: white;
+}
+header a:active{
+	background-color: red;
+}
+body main{
+	display: inline;
+}
+aside.left{
+	background-color:darkgreen;
+	margin-top:0px;
+	width:180px;
+	height:800px;
+	
+	padding: 10px;
+   display: inline-block;
+    margin-top: 0;
+
+}
+.left img{
+	margin: 20px;
+	
+	width:140px;
+	height:100px;
+		
+}
+section.right{
+	float:left;
+}
+.right h1{
+	
+	
+  text-transform:uppercase;  
+}
+
+
+
+
+h2{
+  text-transform:uppercase;
+}
+
+table{
+	margin-left:25%;
+	background-color:white;
+	border-spacing: 50;
+	border: 1px solid black;
+	opacity: 0.8;
+}
+th{
+	text-align:left;
+	background:lightgreen;
+	padding:10px;
+}
+tr:nth-child(1) >th:nth-child(2){
+	text-align: center;
+}
+tr:nth-child(1) >th:nth-child(3){
+	text-align: center;
+}
+td{
+	width:220px;
+	height:50px;
+	vertical-align:center;
+
+}
+tr td:nth-child(2){
+	text-align: center;
+}
+
+tr td:nth-child(3){
+	text-align: center;
+}
+ 

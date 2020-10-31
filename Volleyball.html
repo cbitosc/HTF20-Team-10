@@ -1,0 +1,51 @@
+{%load static%}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chaitanya Kreeda</title>
+    <link rel="stylesheet" href="{%static 'hw1.css' %}" type="text/css" media="all">
+</head>
+<body>
+	<header>
+		<h1>Chaitanya Kreeda</h1>
+		<nav>
+			<a href={%url "cbitcric"%}>Cricket</a>
+			<a href={%url "cbitvol"%}>Volleyball</a>
+			<a href={%url "cbitbas"%}>Basketball</a>
+			<a href={%url "cbitkab"%}>Kabaddi</a>
+		</nav>
+	</header>
+	<main>
+
+			<h2>Volleyball Matches</h2>
+
+
+         {% for s in list %}
+        <span> <button>  {{ s.team_a }} vs {{s.team_b}} </button></span> <span>{{s.dt}}</span>
+        <br><br>
+
+
+          {% endfor %}
+	</main>
+<script>
+	function vlive(){
+		document.getElementById("vumatch").innerHTML="";
+		document.getElementById("vrmatch").innerHTML="";
+		document.getElementById("vlmatch").innerHTML="volleyball live matches are";
+	    	document.getElementById("div2").style.display="block";}
+
+	function vrecent(){
+		document.getElementById("vlmatch").innerHTML="";
+		document.getElementById("vumatch").innerHTML="";
+		document.getElementById("vrmatch").innerHTML="volleyball recent matches are";
+	    	document.getElementById("div3").style.display="block";}
+	function vupcoming(){
+		document.getElementById("vlmatch").innerHTML="";
+		document.getElementById("vrmatch").innerHTML="";
+		document.getElementById("vumatch").innerHTML="volleyball upcoming matches are";
+		document.getElementById("div1").style.display="block"}
+
+
+</script>
+</body>
+</html>
